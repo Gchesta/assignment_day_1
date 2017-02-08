@@ -30,4 +30,9 @@ def is_prime(num, prime_list):
 	possible, we shall divide num by onlly the prime numbers that 
 	precede it. For example if num is 23, there is no need to test the 
 	code from 1 - 23. Only test it on he prime numbers before 23"""
+	for prime_num in prime_list:
+		if num % prime_num == 0:
+			return False
+	return True
+
 	
