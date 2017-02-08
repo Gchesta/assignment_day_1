@@ -23,3 +23,5 @@ def output_prime_numbers(start, up_to):
 			if is_prime(num, prime_list):
 				prime_list.append(num)
 		return prime_list
+
+def is_prime(num, prime_list):
