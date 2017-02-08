@@ -25,3 +25,9 @@ def output_prime_numbers(start, up_to):
 		return prime_list
 
 def is_prime(num, prime_list):
+	"""This function is used to determine whether a number is prime or 
+	not. To ensure that the code is Asymptotic, and as efficient as 
+	possible, we shall divide num by onlly the prime numbers that 
+	precede it. For example if num is 23, there is no need to test the 
+	code from 1 - 23. Only test it on he prime numbers before 23"""
+	
