@@ -12,7 +12,7 @@ def output_prime_numbers(start, up_to):
 	#returns an empty list in case there’s no prime number
 	elif start < 2 and up_to < 2:
 	  return prime_list
-#Ensures that we start counting up from 2
+	#Ensures that we start counting up from 2
 	elif start < 2:
 		return output_prime_numbers(2, up_to)
 	else:
@@ -26,8 +26,8 @@ def output_prime_numbers(start, up_to):
 
 def is_prime(num, prime_list):
 	"""This function is used to determine whether a number is prime or 
-	not. To ensure that the code is Asymptotic, and as efficient as 
-	possible, we shall divide num by onlly the prime numbers that 
+	not. To ensure that the code is as efficient as 
+	possible, we shall divide num by only the prime numbers that 
 	precede it. For example if num is 23, there is no need to test the 
 	code from 1 - 23. Only test it on he prime numbers before 23"""
 	for prime_num in prime_list:
